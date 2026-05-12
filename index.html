@@ -4,40 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Academy - Shaping Bright Futures</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="stylesheet" href="web.css">
-    <link rel="stylesheet" href="web.js"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Elite Academy</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#teachers">Teachers</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="nav-controls">
-                    <button class="dark-mode-toggle" id="darkModeToggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Elite Academy</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#teachers" class="nav-link">Teachers</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
@@ -45,8 +40,9 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Elite Academy</h1>
-            <p class="tagline">Shaping Bright Futures</p>
+            <h1 class="hero-title">Elite Academy</h1>
+            <p class="hero-tagline">Shaping Bright Futures</p>
+            <p class="hero-subtitle">Nurturing Excellence in Education Since 2005</p>
             <button class="btn btn-primary" id="admissionBtn">Admission Open</button>
         </div>
         <div class="hero-overlay"></div>
@@ -56,47 +52,43 @@
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Our School</h2>
+            <p class="section-subtitle">Committed to Excellence and Innovation</p>
             
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Welcome to Elite Academy</h3>
-                    <p>Elite Academy is committed to providing world-class education that fosters critical thinking, creativity, and character development. With state-of-the-art facilities and a team of dedicated educators, we prepare students for success in academics and life.</p>
-                    <p>Since our founding, we have been dedicated to nurturing young minds and building confident leaders of tomorrow.</p>
+                    <p>Elite Academy is a premier educational institution dedicated to providing world-class education to students from all backgrounds. With a legacy of excellence spanning over two decades, we have consistently produced outstanding scholars, athletes, and leaders.</p>
+                    <p>Our holistic approach to education combines traditional values with modern teaching methodologies, ensuring that every student receives personalized attention and guidance.</p>
                 </div>
-                <div class="stats">
-                    <div class="stat-card">
-                        <i class="fas fa-users"></i>
-                        <h4>2500+</h4>
-                        <p>Students</p>
+                <div class="about-cards">
+                    <div class="card mission-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Our Mission</h3>
+                        <p>To empower every student with knowledge, skills, and values needed to succeed in a dynamic world.</p>
                     </div>
-                    <div class="stat-card">
-                        <i class="fas fa-chalkboard-user"></i>
-                        <h4>150+</h4>
-                        <p>Teachers</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-trophy"></i>
-                        <h4>500+</h4>
-                        <p>Achievements</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-star"></i>
-                        <h4>20+</h4>
-                        <p>Years Experience</p>
+                    <div class="card vision-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Our Vision</h3>
+                        <p>To be a leading institution fostering innovation, creativity, and academic excellence.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="mission-vision">
-                <div class="mission-card">
-                    <i class="fas fa-bullseye"></i>
-                    <h3>Our Mission</h3>
-                    <p>To provide inclusive, equitable, and quality education that empowers students to become responsible global citizens and lifelong learners.</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3 class="stat-number">2500+</h3>
+                    <p class="stat-label">Students</p>
                 </div>
-                <div class="vision-card">
-                    <i class="fas fa-lightbulb"></i>
-                    <h3>Our Vision</h3>
-                    <p>To be a leading educational institution recognized for academic excellence, innovation, and the development of well-rounded individuals.</p>
+                <div class="stat-item">
+                    <h3 class="stat-number">150+</h3>
+                    <p class="stat-label">Teachers</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">98%</h3>
+                    <p class="stat-label">Success Rate</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">500+</h3>
+                    <p class="stat-label">Awards</p>
                 </div>
             </div>
         </div>
@@ -106,82 +98,95 @@
     <section id="courses" class="courses">
         <div class="container">
             <h2 class="section-title">Our Courses</h2>
+            <p class="section-subtitle">Comprehensive Education Programs</p>
             
             <div class="courses-grid">
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="https://images.unsplash.com/photo-1427504494874-20c1d5a9cee5?w=500&h=300&fit=crop" alt="Primary Classes">
+                        <i class="fas fa-book"></i>
                     </div>
-                    <div class="course-content">
-                        <h3>Primary Classes</h3>
-                        <p class="grade">Grade 1 - 5</p>
-                        <p class="description">Strong foundation in academics with focus on basic literacy, numeracy, and social skills development.</p>
-                        <button class="btn btn-secondary">Learn More</button>
-                    </div>
+                    <h3>Primary Classes</h3>
+                    <p>Grades I-V</p>
+                    <p class="course-description">Foundation-focused education with emphasis on basic skills, creativity, and character development.</p>
+                    <button class="btn btn-secondary">Learn More</button>
                 </div>
 
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=300&fit=crop" alt="Secondary Classes">
+                        <i class="fas fa-chalkboard-user"></i>
                     </div>
-                    <div class="course-content">
-                        <h3>Secondary Classes</h3>
-                        <p class="grade">Grade 6 - 10</p>
-                        <p class="description">Comprehensive curriculum covering all subjects with emphasis on analytical thinking and practical applications.</p>
-                        <button class="btn btn-secondary">Learn More</button>
-                    </div>
+                    <h3>Secondary Classes</h3>
+                    <p>Grades VI-X</p>
+                    <p class="course-description">Advanced curriculum with specialized subjects, practical learning, and preparation for competitive exams.</p>
+                    <button class="btn btn-secondary">Learn More</button>
                 </div>
 
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="https://images.unsplash.com/photo-1497633762265-25c007844cf7?w=500&h=300&fit=crop" alt="Higher Secondary">
+                        <i class="fas fa-microscope"></i>
                     </div>
-                    <div class="course-content">
-                        <h3>Higher Secondary</h3>
-                        <p class="grade">Grade 11 - 12</p>
-                        <p class="description">Advanced learning with specialized streams (Science, Commerce, Arts) to prepare for higher education.</p>
-                        <button class="btn btn-secondary">Learn More</button>
-                    </div>
+                    <h3>Higher Secondary</h3>
+                    <p>Grades XI-XII</p>
+                    <p class="course-description">Stream-based education in Science, Commerce, and Arts with career guidance and entrance exam preparation.</p>
+                    <button class="btn btn-secondary">Learn More</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Facilities Section -->
-    <section id="facilities" class="facilities">
+    <section class="facilities">
         <div class="container">
             <h2 class="section-title">Our Facilities</h2>
+            <p class="section-subtitle">World-Class Infrastructure</p>
             
             <div class="facilities-grid">
                 <div class="facility-card">
-                    <i class="fas fa-book"></i>
-                    <h3>Central Library</h3>
-                    <p>10,000+ books and digital resources including e-books, journals, and research materials for all students.</p>
+                    <div class="facility-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Library</h3>
+                    <p>Extensive collection of books, journals, and digital resources for students' academic growth.</p>
                 </div>
+
                 <div class="facility-card">
-                    <i class="fas fa-computer"></i>
+                    <div class="facility-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
                     <h3>Computer Lab</h3>
-                    <p>Latest computers with high-speed internet, equipped with modern software for coding and IT education.</p>
+                    <p>State-of-the-art computer lab with high-speed internet and modern software for tech education.</p>
                 </div>
+
                 <div class="facility-card">
-                    <i class="fas fa-chalkboard"></i>
+                    <div class="facility-icon">
+                        <i class="fas fa-chalkboard"></i>
+                    </div>
                     <h3>Smart Classrooms</h3>
-                    <p>Interactive smart boards, multimedia projectors, and modern teaching aids in all classrooms.</p>
+                    <p>Interactive smart boards and digital learning tools for engaging and effective teaching.</p>
                 </div>
+
                 <div class="facility-card">
-                    <i class="fas fa-futbol"></i>
+                    <div class="facility-icon">
+                        <i class="fas fa-football"></i>
+                    </div>
                     <h3>Sports Ground</h3>
-                    <p>Well-maintained sports facilities including playground, basketball court, and cricket field.</p>
+                    <p>Well-maintained grounds for cricket, football, basketball, and other sports activities.</p>
                 </div>
+
                 <div class="facility-card">
-                    <i class="fas fa-microscope"></i>
+                    <div class="facility-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
                     <h3>Science Labs</h3>
-                    <p>Fully equipped physics, chemistry, and biology labs with modern instruments and safety equipment.</p>
+                    <p>Fully equipped laboratories for Physics, Chemistry, and Biology with modern apparatus.</p>
                 </div>
+
                 <div class="facility-card">
-                    <i class="fas fa-utensils"></i>
+                    <div class="facility-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
                     <h3>Cafeteria</h3>
-                    <p>Hygienic cafeteria serving nutritious meals prepared by professional chefs daily.</p>
+                    <p>Hygienic and nutritious meals prepared under professional supervision.</p>
                 </div>
             </div>
         </div>
@@ -190,18 +195,18 @@
     <!-- Teachers Section -->
     <section id="teachers" class="teachers">
         <div class="container">
-            <h2 class="section-title">Meet Our Teachers</h2>
+            <h2 class="section-title">Our Teachers</h2>
+            <p class="section-subtitle">Dedicated Educators & Mentors</p>
             
             <div class="teachers-grid">
                 <div class="teacher-card">
                     <div class="teacher-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Mr. John Smith">
+                        <i class="fas fa-user-tie"></i>
                     </div>
-                    <h3>Mr. John Smith</h3>
+                    <h3>Dr. Rajesh Kumar</h3>
                     <p class="subject">Mathematics</p>
-                    <p class="bio">15+ years of teaching experience. Specializes in making complex concepts simple and engaging.</p>
-                    <div class="teacher-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <p class="bio">20+ years of experience in mathematics education with a passion for making complex concepts simple.</p>
+                    <div class="teacher-social">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
@@ -209,69 +214,38 @@
 
                 <div class="teacher-card">
                     <div class="teacher-image">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="Ms. Sarah Johnson">
-                    </div>
-                    <h3>Ms. Sarah Johnson</h3>
-                    <p class="subject">English Literature</p>
-                    <p class="bio">Award-winning educator with passion for fostering critical thinking and creativity in students.</p>
-                    <div class="teacher-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="teacher-card">
-                    <div class="teacher-image">
-                        <img src="https://images.unsplash.com/photo-1507239711619-8a9abc9acc3f?w=300&h=300&fit=crop" alt="Dr. Michael Chen">
-                    </div>
-                    <h3>Dr. Michael Chen</h3>
-                    <p class="subject">Science & Physics</p>
-                    <p class="bio">PhD in Physics with expertise in experimental learning and STEM education methodologies.</p>
-                    <div class="teacher-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="teacher-card">
-                    <div class="teacher-image">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Ms. Emily Davis">
-                    </div>
-                    <h3>Ms. Emily Davis</h3>
-                    <p class="subject">History & Social Studies</p>
-                    <p class="bio">Passionate historian dedicated to bringing the past to life through interactive classroom experiences.</p>
-                    <div class="teacher-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="teacher-card">
-                    <div class="teacher-image">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop" alt="Mr. David Wilson">
-                    </div>
-                    <h3>Mr. David Wilson</h3>
-                    <p class="subject">Computer Science</p>
-                    <p class="bio">Tech enthusiast with industry experience, teaching coding and digital literacy to next generation.</p>
-                    <div class="teacher-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="teacher-card">
-                    <div class="teacher-image">
-                        <img src="https://images.unsplash.com/photo-1459262838948-3e2de6c3e49b?w=300&h=300&fit=crop" alt="Ms. Priya Sharma">
+                        <i class="fas fa-user-tie"></i>
                     </div>
                     <h3>Ms. Priya Sharma</h3>
-                    <p class="subject">Languages & Culture</p>
-                    <p class="bio">Multilingual educator promoting cultural understanding and language proficiency across diverse backgrounds.</p>
-                    <div class="teacher-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <p class="subject">English Literature</p>
+                    <p class="bio">15+ years of teaching experience focused on developing critical thinking and communication skills.</p>
+                    <div class="teacher-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Mr. Arjun Singh</h3>
+                    <p class="subject">Science</p>
+                    <p class="bio">18+ years of expertise in science education with hands-on laboratory experience.</p>
+                    <div class="teacher-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Dr. Neha Verma</h3>
+                    <p class="subject">History & Geography</p>
+                    <p class="bio">12+ years of teaching making history and geography engaging and memorable for students.</p>
+                    <div class="teacher-social">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
@@ -283,153 +257,138 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
-            <h2 class="section-title">School Gallery</h2>
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">Moments of Learning and Growth</p>
             
             <div class="gallery-grid">
-                <a href="https://images.unsplash.com/photo-1427504494874-20c1d5a9cee5?w=800" data-lightbox="gallery" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1427504494874-20c1d5a9cee5?w=300&h=250&fit=crop" alt="Classroom">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-image"></i>
+                        <span>School Events</span>
                     </div>
-                </a>
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(0)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
 
-                <a href="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" data-lightbox="gallery" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&h=250&fit=crop" alt="School Event">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-image"></i>
+                        <span>Sports Day</span>
                     </div>
-                </a>
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(1)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
 
-                <a href="https://images.unsplash.com/photo-1497633762265-25c007844cf7?w=800" data-lightbox="gallery" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1497633762265-25c007844cf7?w=300&h=250&fit=crop" alt="Student Activity">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-image"></i>
+                        <span>Annual Function</span>
                     </div>
-                </a>
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(2)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
 
-                <a href="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" data-lightbox="gallery" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=250&fit=crop" alt="Sports">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-image"></i>
+                        <span>Science Fair</span>
                     </div>
-                </a>
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(3)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
 
-                <a href="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800" data-lightbox="gallery" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=250&fit=crop" alt="Campus">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-image"></i>
+                        <span>Field Trip</span>
                     </div>
-                </a>
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(4)"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
 
-                <a href="https://images.unsplash.com/photo-1507239711619-8a9abc9acc3f?w=800" data-lightbox="gallery" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1507239711619-8a9abc9acc3f?w=300&h=250&fit=crop" alt="Lab">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <i class="fas fa-image"></i>
+                        <span>Classroom</span>
                     </div>
-                </a>
-
-                <a href="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800" data-lightbox="gallery" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=250&fit=crop" alt="Library">
                     <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                        <button class="gallery-btn" onclick="openLightbox(5)"><i class="fas fa-expand"></i></button>
                     </div>
-                </a>
-
-                <a href="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800" data-lightbox="gallery" class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=250&fit=crop" alt="Building">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-image">
+                <i class="fas fa-image"></i>
+            </div>
+            <div class="lightbox-nav">
+                <button onclick="prevImage()" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <button onclick="nextImage()" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+    <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">What People Say</h2>
+            <h2 class="section-title">Testimonials</h2>
+            <p class="section-subtitle">What Parents and Students Say</p>
             
             <div class="testimonials-slider">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Elite Academy has been instrumental in my child's academic and personal growth. The teachers are dedicated and the facilities are outstanding."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop" alt="Parent">
-                        <div>
-                            <h4>Rajesh Kumar</h4>
-                            <p>Parent</p>
-                        </div>
-                    </div>
-                    <div class="stars">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
+                    <p class="testimonial-text">"Elite Academy has transformed my child's academic journey. The teachers are incredibly supportive and the curriculum is comprehensive."</p>
+                    <h4 class="testimonial-author">Ananya Patel</h4>
+                    <p class="testimonial-role">Parent</p>
                 </div>
 
                 <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The learning environment here is supportive and encouraging. I've learned so much not just academically but also as a person."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop" alt="Student">
-                        <div>
-                            <h4>Aarav Singh</h4>
-                            <p>Student</p>
-                        </div>
-                    </div>
-                    <div class="stars">
+                    <div class="testimonial-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
+                    <p class="testimonial-text">"The education quality and facilities are excellent. I have made lifelong friends and learned valuable life skills here."</p>
+                    <h4 class="testimonial-author">Rohan Mittal</h4>
+                    <p class="testimonial-role">Student, Class X</p>
                 </div>
 
                 <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The school's focus on holistic development is commendable. My son has not only excelled academically but also in sports and arts."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1507239711619-8a9abc9acc3f?w=50&h=50&fit=crop" alt="Parent">
-                        <div>
-                            <h4>Priya Mehta</h4>
-                            <p>Parent</p>
-                        </div>
-                    </div>
-                    <div class="stars">
+                    <div class="testimonial-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
+                    <p class="testimonial-text">"Highly impressed with the teaching methodology and individual attention given to each student. Truly a wonderful institution."</p>
+                    <h4 class="testimonial-author">Vikram Singh</h4>
+                    <p class="testimonial-role">Parent</p>
                 </div>
+            </div>
 
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The placement record of this school is excellent. I got admission to my dream university thanks to the guidance provided."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop" alt="Student">
-                        <div>
-                            <h4>Divya Patel</h4>
-                            <p>Student</p>
-                        </div>
-                    </div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
+            <div class="testimonial-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
             </div>
         </div>
     </section>
@@ -438,45 +397,53 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We'd Love to Hear From You</p>
             
-            <div class="contact-wrapper">
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
                 <div class="contact-info">
                     <div class="info-card">
                         <i class="fas fa-map-marker-alt"></i>
                         <h3>Address</h3>
-                        <p>123 Education Street<br>New Delhi, India 110001</p>
+                        <p>123 Education Street<br>Academic City, AC 12345<br>India</p>
                     </div>
+
                     <div class="info-card">
                         <i class="fas fa-phone"></i>
                         <h3>Phone</h3>
-                        <p>+91 (011) 1234-5678<br>+91 (011) 1234-5679</p>
+                        <p>+91 (0) 1234 567890<br>+91 (0) 1234 567891<br>Emergency: +91 9876 543210</p>
                     </div>
+
                     <div class="info-card">
                         <i class="fas fa-envelope"></i>
                         <h3>Email</h3>
-                        <p>info@eliteacademy.com<br>admission@eliteacademy.com</p>
+                        <p>info@eliteacademy.edu<br>admissions@eliteacademy.edu<br>support@eliteacademy.edu</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 7:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p>
                     </div>
                 </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
             </div>
 
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.6897253667307!2d77.2099!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd3f3f3f3f3d%3A0x3f3f3f3f3f3f3f3f!2sNew%20Delhi!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.2257410837564!2d88.36389512342049!3d22.572646879999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277175a96e965%3A0x8f0fd8c61450ffe3!2sIndian%20Museum!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -487,16 +454,11 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Elite Academy</h3>
-                    <p>Shaping Bright Futures through quality education and holistic development.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                    <p>Shaping bright futures through quality education and holistic development.</p>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -504,86 +466,54 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Academics</h4>
-                    <ul>
-                        <li><a href="#courses">Primary Classes</a></li>
-                        <li><a href="#courses">Secondary Classes</a></li>
-                        <li><a href="#courses">Higher Secondary</a></li>
-                        <li><a href="#facilities">Facilities</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>📍 123 Education Street<br>New Delhi, India<br>📞 +91-011-1234-5678<br>📧 info@eliteacademy.com</p>
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2026 Elite Academy. All rights reserved.</p>
+                <p>&copy; 2026 Elite Academy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
-
-    <!-- Admission Modal -->
-    <div id="admissionModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Admission Form</h2>
-            <form id="admissionForm">
-                <div class="form-group">
-                    <label>Student Name *</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>Parent/Guardian Name *</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>Email *</label>
-                    <input type="email" required>
-                </div>
-                <div class="form-group">
-                    <label>Phone *</label>
-                    <input type="tel" required>
-                </div>
-                <div class="form-group">
-                    <label>Current Class/Grade *</label>
-                    <select required>
-                        <option value="">Select Grade</option>
-                        <option value="1">Grade 1</option>
-                        <option value="2">Grade 2</option>
-                        <option value="3">Grade 3</option>
-                        <option value="4">Grade 4</option>
-                        <option value="5">Grade 5</option>
-                        <option value="6">Grade 6</option>
-                        <option value="7">Grade 7</option>
-                        <option value="8">Grade 8</option>
-                        <option value="9">Grade 9</option>
-                        <option value="10">Grade 10</option>
-                        <option value="11">Grade 11</option>
-                        <option value="12">Grade 12</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <input type="checkbox" required>
-                        I agree to the terms and conditions
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit Application</button>
-            </form>
-        </div>
-    </div>
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Admission Modal -->
+    <div id="admissionModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeAdmissionModal()">&times;</span>
+            <h2>Admission Form</h2>
+            <form id="admissionForm">
+                <div class="form-row">
+                    <input type="text" placeholder="Student Name" required>
+                    <input type="email" placeholder="Parent Email" required>
+                </div>
+                <div class="form-row">
+                    <select required>
+                        <option value="">Select Class</option>
+                        <option value="I">Class I</option>
+                        <option value="VI">Class VI</option>
+                        <option value="XI">Class XI</option>
+                    </select>
+                    <input type="tel" placeholder="Parent Phone" required>
+                </div>
+                <textarea placeholder="Additional Information" rows="4"></textarea>
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
